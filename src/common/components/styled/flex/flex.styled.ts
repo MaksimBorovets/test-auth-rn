@@ -9,11 +9,13 @@ interface IFlexStyleProps {
 }
 
 export const Row = styled.View<IFlexStyleProps>`
+  flex: 1;
   flex-direction: row;
   justify-content: ${props => props.justifyContent ?? 'flex-start'};
   align-items: ${props => props.alignItems ?? 'center'};
   gap: ${props => props.gap ?? 'center'};
-  flex: 1;
+  width: 100%;
+  height: 100%;
 `;
 
 export const Column = styled.View<IFlexStyleProps>`
@@ -21,5 +23,6 @@ export const Column = styled.View<IFlexStyleProps>`
   justify-content: ${props => props.justifyContent ?? 'flex-start'};
   align-items: ${props => props.alignItems ?? 'flex-start'};
   gap: ${props => props.gap ?? 'center'};
-  flex: 1;
+  width: 100%;
+  height: 100%;
 `;

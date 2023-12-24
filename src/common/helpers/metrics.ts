@@ -40,7 +40,7 @@ export function horizontalScale(size: number) {
   return Math.round(PixelRatio.roundToNearestPixel(newSize)) - 1;
 }
 
-export function verticalcale(size: number) {
+export function verticalScale(size: number) {
   const newSize = size * scaleVertical;
   if (Platform.OS === 'ios') {
     return Math.round(PixelRatio.roundToNearestPixel(newSize));

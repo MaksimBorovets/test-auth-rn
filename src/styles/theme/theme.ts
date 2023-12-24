@@ -3,6 +3,7 @@ const theme = {
   colors: {
     white: '#FFFFFF',
     black: '#000000',
+    gray: '#262727',
     primaryBtnBackground: '#EB0057',
   },
   fonts: {

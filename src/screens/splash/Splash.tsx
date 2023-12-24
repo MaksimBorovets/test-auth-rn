@@ -1,18 +1,39 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet } from 'react-native';
 
 import MainLayout from '../../common/components/layouts/main/MainLayout';
-import { Column } from '../../common/components/styled/flex/flex.styled';
-import { StyledText } from './splash.styled';
+import { Column } from '../../common/components/styled/flex/Flex.styled';
+
+import LogoIcon from '../../assets/icons/logo.svg';
+import { horizontalScale, verticalScale } from '../../common/helpers/metrics';
+import { Container, ContentBox, LogoBox } from './splash.styled';
+import MainButton from '../../common/components/buttons/button/MainButton';
+import theme from '../../styles/theme/theme';
 
 export default function SplashScreen() {
   return (
     <MainLayout>
-      <View style={styles.container}>
-        <Column >
-          <StyledText>Splash</StyledText>
-          <Text style={{ color: 'white' }}>Splash</Text>
+      <Container>
+        <Column alignItems="center" justifyContent="space-between">
+          <ContentBox>
+            <LogoBox>
+              <LogoIcon
+                width={horizontalScale(104)}
+                height={verticalScale(111)}
+              />
+            </LogoBox>
+          </ContentBox>
+          <ContentBox>
+            <Column justifyContent="flex-end" gap={verticalScale(15)}>
+              <MainButton btnText="Login" onPress={() => {}} />
+              <MainButton
+                btnText="Register"
+                btnBackgroundColor={theme.colors.gray}
+                onPress={() => {}}
+              />
+            </Column>
+          </ContentBox>
         </Column>
-      </View>
+      </Container>
     </MainLayout>
   );
 }
