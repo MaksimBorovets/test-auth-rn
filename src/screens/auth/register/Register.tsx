@@ -30,6 +30,10 @@ export default function RegisterScreen() {
     navigate(NAVIGATION_KEYS.LOGIN);
   };
 
+  const handleSubmit = () => {
+    navigate(NAVIGATION_KEYS.HOME);
+  };
+
   return (
     <MainLayout>
       <Container>
@@ -50,7 +54,7 @@ export default function RegisterScreen() {
         </TopContentBox>
         <BottomContentBox>
           <AuthForm
-            onSubmit={() => {}}
+            onSubmit={handleSubmit}
             subtitle="Create your email and  password for your account"
             title="Register"
             onSwitchAuthPress={handleOnSwitchAuthPress}

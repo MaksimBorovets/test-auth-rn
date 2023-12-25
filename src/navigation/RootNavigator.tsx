@@ -9,6 +9,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import SplashScreen from '../screens/splash/Splash';
 import LoginScreen from '../screens/auth/login/Login';
 import RegisterScreen from '../screens/auth/register/Register';
+import Home from '../screens/home/Home';
 
 const Stack = createStackNavigator<TRootStackParamList>();
 
@@ -36,6 +37,11 @@ const RootNavigator = () => {
         <Stack.Screen
           name={NAVIGATION_KEYS.REGISTER}
           component={RegisterScreen}
+          options={screenOptions}
+        />
+        <Stack.Screen
+          name={NAVIGATION_KEYS.HOME}
+          component={Home}
           options={screenOptions}
         />
       </>
