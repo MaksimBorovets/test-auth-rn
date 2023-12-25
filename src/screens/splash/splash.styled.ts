@@ -14,6 +14,8 @@ export const ContentBox = styled.View`
   width: 100%;
 `;
 
-export const LogoBox = styled.View`
-  padding-bottom: ${verticalScale(60)}px;
+export const LogoBox = styled.View<{isLoading?: boolean}>`
+  padding-bottom: ${p => p.isLoading ? 0 + 'px' : verticalScale(60) + 'px'};
+  gap: ${verticalScale(20)}px;
+  
 `;

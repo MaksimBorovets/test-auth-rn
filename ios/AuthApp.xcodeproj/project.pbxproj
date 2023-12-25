@@ -11,15 +11,15 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		2B6AF6E1D5E1A2255308ABE5 /* libPods-AuthApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 26C25E591AE2E30A278502D3 /* libPods-AuthApp.a */; };
-		2DC4EF3211FC84B51806D1C5 /* libPods-AuthApp-AuthAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F78711D385B8DDB377BD5DD8 /* libPods-AuthApp-AuthAppTests.a */; };
 		34F3A22084D04E2C87A1E6C7 /* Montserrat-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 150482AD43BA49B9B6309494 /* Montserrat-ExtraLight.ttf */; };
 		387273403D204DC4B19AC14A /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A62AEC8D351347F5BB8F1C5D /* Montserrat-Medium.ttf */; };
+		7938FA8BE637A04F8CD2E505 /* libPods-AuthApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C39A876BA03747B5AF6003B3 /* libPods-AuthApp.a */; };
 		7B3617148E704109AF30EA2C /* Montserrat-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C0833C776A3745638D9C3121 /* Montserrat-Black.ttf */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		85071469F7DA4D9AA3204245 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6CCBC1DED49743AB86E10CF2 /* Montserrat-Regular.ttf */; };
 		9E0FC83D9AB64B1A8C566618 /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A7373C810D924BDEAF329C95 /* Montserrat-SemiBold.ttf */; };
 		AC2BE1A742E5433DB80650C7 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EFA0AEF090AF49059E392495 /* Montserrat-Bold.ttf */; };
+		B6AFD749417A642902C0BEA7 /* libPods-AuthApp-AuthAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EDD74E719425E6D933DA2FD /* libPods-AuthApp-AuthAppTests.a */; };
 		F8919829446948C9ADF95295 /* Montserrat-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3E83E7FDE06A4834A49984E7 /* Montserrat-Thin.ttf */; };
 		FBF9F69F74F84716BF298005 /* Montserrat-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 272F50E8F2704236A321BD31 /* Montserrat-ExtraBold.ttf */; };
 		FE963491AF9D4639892AAD85 /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 39C0CD6E874F4C2097F04794 /* Montserrat-Light.ttf */; };
@@ -39,6 +39,7 @@
 		00E356EE1AD99517003FC87E /* AuthAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AuthAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* AuthAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AuthAppTests.m; sourceTree = "<group>"; };
+		0648ED148DB3A1BB93820F44 /* Pods-AuthApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuthApp.release.xcconfig"; path = "Target Support Files/Pods-AuthApp/Pods-AuthApp.release.xcconfig"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* AuthApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AuthApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = AuthApp/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = AuthApp/AppDelegate.mm; sourceTree = "<group>"; };
@@ -46,22 +47,21 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = AuthApp/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = AuthApp/main.m; sourceTree = "<group>"; };
 		150482AD43BA49B9B6309494 /* Montserrat-ExtraLight.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-ExtraLight.ttf"; path = "../assets/fonts/Montserrat-ExtraLight.ttf"; sourceTree = "<group>"; };
-		26C25E591AE2E30A278502D3 /* libPods-AuthApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AuthApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		272F50E8F2704236A321BD31 /* Montserrat-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-ExtraBold.ttf"; path = "../assets/fonts/Montserrat-ExtraBold.ttf"; sourceTree = "<group>"; };
 		39C0CD6E874F4C2097F04794 /* Montserrat-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-Light.ttf"; path = "../assets/fonts/Montserrat-Light.ttf"; sourceTree = "<group>"; };
 		3E83E7FDE06A4834A49984E7 /* Montserrat-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-Thin.ttf"; path = "../assets/fonts/Montserrat-Thin.ttf"; sourceTree = "<group>"; };
-		44862F6ADE84271D0876F3FC /* Pods-AuthApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuthApp.release.xcconfig"; path = "Target Support Files/Pods-AuthApp/Pods-AuthApp.release.xcconfig"; sourceTree = "<group>"; };
-		5613971457972C9BF3B764C2 /* Pods-AuthApp-AuthAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuthApp-AuthAppTests.release.xcconfig"; path = "Target Support Files/Pods-AuthApp-AuthAppTests/Pods-AuthApp-AuthAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		5A05CED5C772BC6FD3896754 /* Pods-AuthApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuthApp.debug.xcconfig"; path = "Target Support Files/Pods-AuthApp/Pods-AuthApp.debug.xcconfig"; sourceTree = "<group>"; };
+		5EDD74E719425E6D933DA2FD /* libPods-AuthApp-AuthAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AuthApp-AuthAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CCBC1DED49743AB86E10CF2 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-Regular.ttf"; path = "../assets/fonts/Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		7F278D0925CEB4F6F176DBF7 /* Pods-AuthApp-AuthAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuthApp-AuthAppTests.release.xcconfig"; path = "Target Support Files/Pods-AuthApp-AuthAppTests/Pods-AuthApp-AuthAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = AuthApp/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8E93DFC620771BFAEBB55751 /* Pods-AuthApp-AuthAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuthApp-AuthAppTests.debug.xcconfig"; path = "Target Support Files/Pods-AuthApp-AuthAppTests/Pods-AuthApp-AuthAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A62AEC8D351347F5BB8F1C5D /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-Medium.ttf"; path = "../assets/fonts/Montserrat-Medium.ttf"; sourceTree = "<group>"; };
 		A7373C810D924BDEAF329C95 /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-SemiBold.ttf"; path = "../assets/fonts/Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
-		AE60568337A4713DBA7E7582 /* Pods-AuthApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuthApp.debug.xcconfig"; path = "Target Support Files/Pods-AuthApp/Pods-AuthApp.debug.xcconfig"; sourceTree = "<group>"; };
 		C0833C776A3745638D9C3121 /* Montserrat-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-Black.ttf"; path = "../assets/fonts/Montserrat-Black.ttf"; sourceTree = "<group>"; };
-		E458DD253C738A641BC19712 /* Pods-AuthApp-AuthAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuthApp-AuthAppTests.debug.xcconfig"; path = "Target Support Files/Pods-AuthApp-AuthAppTests/Pods-AuthApp-AuthAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C39A876BA03747B5AF6003B3 /* libPods-AuthApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AuthApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		EFA0AEF090AF49059E392495 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-Bold.ttf"; path = "../assets/fonts/Montserrat-Bold.ttf"; sourceTree = "<group>"; };
-		F78711D385B8DDB377BD5DD8 /* libPods-AuthApp-AuthAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AuthApp-AuthAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DC4EF3211FC84B51806D1C5 /* libPods-AuthApp-AuthAppTests.a in Frameworks */,
+				B6AFD749417A642902C0BEA7 /* libPods-AuthApp-AuthAppTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,7 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B6AF6E1D5E1A2255308ABE5 /* libPods-AuthApp.a in Frameworks */,
+				7938FA8BE637A04F8CD2E505 /* libPods-AuthApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,8 +118,8 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				26C25E591AE2E30A278502D3 /* libPods-AuthApp.a */,
-				F78711D385B8DDB377BD5DD8 /* libPods-AuthApp-AuthAppTests.a */,
+				C39A876BA03747B5AF6003B3 /* libPods-AuthApp.a */,
+				5EDD74E719425E6D933DA2FD /* libPods-AuthApp-AuthAppTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -159,10 +159,10 @@
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				AE60568337A4713DBA7E7582 /* Pods-AuthApp.debug.xcconfig */,
-				44862F6ADE84271D0876F3FC /* Pods-AuthApp.release.xcconfig */,
-				E458DD253C738A641BC19712 /* Pods-AuthApp-AuthAppTests.debug.xcconfig */,
-				5613971457972C9BF3B764C2 /* Pods-AuthApp-AuthAppTests.release.xcconfig */,
+				5A05CED5C772BC6FD3896754 /* Pods-AuthApp.debug.xcconfig */,
+				0648ED148DB3A1BB93820F44 /* Pods-AuthApp.release.xcconfig */,
+				8E93DFC620771BFAEBB55751 /* Pods-AuthApp-AuthAppTests.debug.xcconfig */,
+				7F278D0925CEB4F6F176DBF7 /* Pods-AuthApp-AuthAppTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -191,12 +191,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "AuthAppTests" */;
 			buildPhases = (
-				9031502FCD1957D5EEBF15D6 /* [CP] Check Pods Manifest.lock */,
+				0007D11E3A47264050477222 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				7B5396FB13CF3A67281785AD /* [CP] Embed Pods Frameworks */,
-				EE077499028B418BD5904AF2 /* [CP] Copy Pods Resources */,
+				3E477A2F4CE0299AF6D0954C /* [CP] Embed Pods Frameworks */,
+				903A93CDD0CB3B775B20928C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -212,13 +212,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "AuthApp" */;
 			buildPhases = (
-				1CDA2021638E2DA23E32D815 /* [CP] Check Pods Manifest.lock */,
+				C5127015FEF3541C5E1B0D1A /* [CP] Check Pods Manifest.lock */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				BA085BEC3C6E52D52A2FBD34 /* [CP] Embed Pods Frameworks */,
-				20A10A81A9601F7AF498E1EA /* [CP] Copy Pods Resources */,
+				9C4996B41A6D5EA066263945 /* [CP] Embed Pods Frameworks */,
+				671F236A7FEEB8ADB344248E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -294,79 +294,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/.xcode.env.local",
-				"$(SRCROOT)/.xcode.env",
-			);
-			name = "Bundle React Native code and images";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"../node_modules/react-native/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"../node_modules/react-native/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
-		};
-		1CDA2021638E2DA23E32D815 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-AuthApp-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		20A10A81A9601F7AF498E1EA /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AuthApp/Pods-AuthApp-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AuthApp/Pods-AuthApp-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AuthApp/Pods-AuthApp-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7B5396FB13CF3A67281785AD /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AuthApp-AuthAppTests/Pods-AuthApp-AuthAppTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AuthApp-AuthAppTests/Pods-AuthApp-AuthAppTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AuthApp-AuthAppTests/Pods-AuthApp-AuthAppTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9031502FCD1957D5EEBF15D6 /* [CP] Check Pods Manifest.lock */ = {
+		0007D11E3A47264050477222 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -388,7 +316,74 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		BA085BEC3C6E52D52A2FBD34 /* [CP] Embed Pods Frameworks */ = {
+		00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/.xcode.env.local",
+				"$(SRCROOT)/.xcode.env",
+			);
+			name = "Bundle React Native code and images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"../node_modules/react-native/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"../node_modules/react-native/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
+		};
+		3E477A2F4CE0299AF6D0954C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AuthApp-AuthAppTests/Pods-AuthApp-AuthAppTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AuthApp-AuthAppTests/Pods-AuthApp-AuthAppTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AuthApp-AuthAppTests/Pods-AuthApp-AuthAppTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		671F236A7FEEB8ADB344248E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AuthApp/Pods-AuthApp-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AuthApp/Pods-AuthApp-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AuthApp/Pods-AuthApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		903A93CDD0CB3B775B20928C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AuthApp-AuthAppTests/Pods-AuthApp-AuthAppTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AuthApp-AuthAppTests/Pods-AuthApp-AuthAppTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AuthApp-AuthAppTests/Pods-AuthApp-AuthAppTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C4996B41A6D5EA066263945 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -405,21 +400,26 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AuthApp/Pods-AuthApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		EE077499028B418BD5904AF2 /* [CP] Copy Pods Resources */ = {
+		C5127015FEF3541C5E1B0D1A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AuthApp-AuthAppTests/Pods-AuthApp-AuthAppTests-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Copy Pods Resources";
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AuthApp-AuthAppTests/Pods-AuthApp-AuthAppTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AuthApp-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AuthApp-AuthAppTests/Pods-AuthApp-AuthAppTests-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -455,7 +455,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E458DD253C738A641BC19712 /* Pods-AuthApp-AuthAppTests.debug.xcconfig */;
+			baseConfigurationReference = 8E93DFC620771BFAEBB55751 /* Pods-AuthApp-AuthAppTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -482,7 +482,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5613971457972C9BF3B764C2 /* Pods-AuthApp-AuthAppTests.release.xcconfig */;
+			baseConfigurationReference = 7F278D0925CEB4F6F176DBF7 /* Pods-AuthApp-AuthAppTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -506,7 +506,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AE60568337A4713DBA7E7582 /* Pods-AuthApp.debug.xcconfig */;
+			baseConfigurationReference = 5A05CED5C772BC6FD3896754 /* Pods-AuthApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -533,7 +533,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 44862F6ADE84271D0876F3FC /* Pods-AuthApp.release.xcconfig */;
+			baseConfigurationReference = 0648ED148DB3A1BB93820F44 /* Pods-AuthApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;

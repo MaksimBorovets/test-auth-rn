@@ -1,13 +1,32 @@
+import { useNavigation } from '@react-navigation/native';
+import AsyncStorage from '@react-native-async-storage/async-storage';
+import { NativeStackNavigationProp } from '@react-navigation/native-stack';
+
+import { store } from '../../store/store';
+import theme from '../../styles/theme/theme';
+import { ASYNC_STORAGE_KEYS } from '../../common/types';
+import { BottomContent, ImageBackground, Text } from './Home.styled';
+import { useGetUserQuery, usersApi } from '../../store/api/user/user';
+import { fontScale, verticalScale } from '../../common/helpers/metrics';
 import MainLayout from '../../common/components/layouts/main/MainLayout';
 import { Column } from '../../common/components/styled/flex/Flex.styled';
-import { BottomContent, ImageBackground, Text } from './Home.styled';
 import MainButton from '../../common/components/buttons/button/MainButton';
-import theme from '../../styles/theme/theme';
-import { fontScale, verticalScale } from '../../common/helpers/metrics';
-import { useGetUserQuery, usersApi } from '../../store/api/user/user';
+import { NAVIGATION_KEYS, TRootStackParamList } from '../../navigation/types';
 
 export default function Home() {
   const { data: user } = useGetUserQuery('1');
+  const { push } =
+    useNavigation<NativeStackNavigationProp<TRootStackParamList>>();
+
+  const handleLogOut = async () => {
+    try {
+      await AsyncStorage.removeItem(ASYNC_STORAGE_KEYS.TOKEN);
+      store.dispatch(usersApi.util.resetApiState());
+      push(NAVIGATION_KEYS.SPLASH);
+    } catch (error) {
+      console.log('🚀 ~ file: Home.tsx:19 ~ handleLogOut ~ error:', error);
+    }
+  };
 
   return (
     <MainLayout>
@@ -38,7 +57,7 @@ export default function Home() {
           </Column>
         </ImageBackground>
         <BottomContent>
-          <MainButton btnText="Log out" onPress={() => {}} />
+          <MainButton btnText="Log out" onPress={handleLogOut} />
         </BottomContent>
       </Column>
     </MainLayout>

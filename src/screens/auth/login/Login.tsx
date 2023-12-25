@@ -23,6 +23,8 @@ import {
 } from '../../../common/helpers/metrics';
 import AuthForm from '../components/auth-form/AuthForm';
 import { useLazyGetUserQuery } from '../../../store/api/user/user';
+import AsyncStorage from '@react-native-async-storage/async-storage';
+import { ASYNC_STORAGE_KEYS } from '../../../common/types';
 
 export default function LoginScreen() {
   const [getUser] = useLazyGetUserQuery();
@@ -37,6 +39,7 @@ export default function LoginScreen() {
     try {
       const user = await getUser('1').unwrap();
       if (user) {
+        await AsyncStorage.setItem(ASYNC_STORAGE_KEYS.TOKEN, 'fakeToken');
         navigate(NAVIGATION_KEYS.HOME);
       }
     } catch (error) {

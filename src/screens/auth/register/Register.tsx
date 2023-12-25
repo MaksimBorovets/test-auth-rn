@@ -1,3 +1,4 @@
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useNavigation } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 
@@ -21,8 +22,12 @@ import {
   verticalScale,
 } from '../../../common/helpers/metrics';
 import AuthForm from '../components/auth-form/AuthForm';
+import { useCallback } from 'react';
+import { useLazyGetUserQuery } from '../../../store/api/user/user';
+import { ASYNC_STORAGE_KEYS } from '../../../common/types';
 
 export default function RegisterScreen() {
+  const [getUser] = useLazyGetUserQuery();
   const { goBack, navigate } =
     useNavigation<NativeStackNavigationProp<TRootStackParamList>>();
 
@@ -30,9 +35,17 @@ export default function RegisterScreen() {
     navigate(NAVIGATION_KEYS.LOGIN);
   };
 
-  const handleSubmit = () => {
-    navigate(NAVIGATION_KEYS.HOME);
-  };
+  const handleSubmit = useCallback(async () => {
+    try {
+      const user = await getUser('1').unwrap();
+      if (user) {
+        await AsyncStorage.setItem(ASYNC_STORAGE_KEYS.TOKEN, 'fakeToken');
+        navigate(NAVIGATION_KEYS.HOME);
+      }
+    } catch (error) {
+      console.log('🚀 ~ file: Login.tsx:42 ~ handleSubmit ~ error:', error);
+    }
+  }, []);
 
   return (
     <MainLayout>
