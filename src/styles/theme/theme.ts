@@ -1,10 +1,11 @@
 // theme.js
 const theme = {
   colors: {
+    primary: '#EB0057',
     white: '#FFFFFF',
     black: '#000000',
     gray: '#262727',
-    primaryBtnBackground: '#EB0057',
+    lightGray: '#818181',
   },
   fonts: {
     montserrat: {

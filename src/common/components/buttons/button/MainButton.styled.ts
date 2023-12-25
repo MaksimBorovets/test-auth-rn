@@ -4,7 +4,7 @@ import { fontScale, verticalScale } from '../../../helpers/metrics';
 
 export const Container = styled.TouchableOpacity<{ backgroundColor?: string }>`
   background-color: ${props =>
-    props.backgroundColor ?? props.theme.colors.primaryBtnBackground};
+    props.backgroundColor ?? props.theme.colors.primary};
   align-items: center;
   justify-content: center;
   width: 100%;
@@ -17,7 +17,7 @@ export const ButtonText = styled.Text<{
   padding?: number;
 }>`
   color: ${props => props.color ?? props.theme.colors.white};
-  font-size: ${fontScale(12)};
+  font-size: ${fontScale(12)}px;
   font-family: ${props =>
     props.fontFamily ?? props.theme.fonts.montserrat[700]};
   padding: ${verticalScale(16)}px;

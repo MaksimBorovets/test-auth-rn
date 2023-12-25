@@ -7,6 +7,8 @@ import { NAVIGATION_KEYS, TRootStackParamList } from './types';
 import { NavigationContainer } from '@react-navigation/native';
 
 import SplashScreen from '../screens/splash/Splash';
+import LoginScreen from '../screens/auth/login/Login';
+import RegisterScreen from '../screens/auth/register/Register';
 
 const Stack = createStackNavigator<TRootStackParamList>();
 
@@ -20,11 +22,23 @@ const screenOptions = (): StackNavigationOptions => {
 const RootNavigator = () => {
   const screens = useMemo(
     () => (
-      <Stack.Screen
-        name={NAVIGATION_KEYS.SPLASH}
-        component={SplashScreen}
-        options={screenOptions}
-      />
+      <>
+        <Stack.Screen
+          name={NAVIGATION_KEYS.SPLASH}
+          component={SplashScreen}
+          options={screenOptions}
+        />
+        <Stack.Screen
+          name={NAVIGATION_KEYS.LOGIN}
+          component={LoginScreen}
+          options={screenOptions}
+        />
+        <Stack.Screen
+          name={NAVIGATION_KEYS.REGISTER}
+          component={RegisterScreen}
+          options={screenOptions}
+        />
+      </>
     ),
     [],
   );
